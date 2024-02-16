@@ -1,0 +1,21 @@
+#container {
+    width: 75%;
+    margin: auto;
+
+}
+
+#canvas {
+    width: 100%;
+    border: 3px solid black;
+}
+
+.button-wrapper {
+    text-align: center;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+}
+
+button {
+    font-size: 2em;
+}

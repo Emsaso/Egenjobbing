@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Fargeknapper</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script defer src='main.js'></script>
+</head>
+
+<body>
+    <div id="main-wrapper">
+        <div class="info-container container">
+            <h3>Lag knapper som forandrer farger på elementene i "item-container"</h3>
+        </div>
+        <div class="input-container container">
+            <p class="input-color">Rød:
+                <input tabindex="1" oninput="getExampleColor1()" type="range" min="0" max="255" value="0" id="red-sel1">
+                <input tabindex="2" oninput="getExampleColor2()" type="number" min="0" max="255" value="0" id="red-sel2">
+            </p>
+            <p class="input-color">Grønn:
+                <input tabindex="1" oninput="getExampleColor1()" type="range" min="0" max="255" value="0" id="grn-sel1">
+                <input tabindex="2" oninput="getExampleColor2()" type="number" min="0" max="255" value="0" id="grn-sel2">
+            </p>
+            <p class="input-color">Blå:
+                <input tabindex="1" oninput="getExampleColor1()" type="range" min="0" max="255" value="0" id="blu-sel1">
+                <input tabindex="2" oninput="getExampleColor2()" type="number" min="0" max="255" value="0" id="blu-sel2">
+            </p>
+            <button  tabindex="3" id="select-color-button" onclick="everythingSelectedColorChange()">Min farge</button>
+        </div>
+        <div class="button-container container">
+            <button  tabindex="3" onclick="squareRandomColorChange()">Firkant</button>
+            <button  tabindex="3" onclick="circleRandomColorChange()">Sirkel</button>
+            <button  tabindex="3" onclick="triangleRandomColorChange()">Trekant</button>
+            <button  tabindex="3" onclick="everythingRandomColorChange()">Alt</button>
+        </div>
+        <div class="item-container container">
+            <div class="square"></div>
+            <div class="circle"></div>
+            <div class="triangle"></div>
+            <div class="nothing"></div>
+        </div>
+    </div>
+</body>
+
+</html>
