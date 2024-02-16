@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+}
+
+#main-container {
+    height: 95%;
+    width: 99%;
+    overflow: hidden;
+    border: 1px solid black;
+    background-color: #666;
+}
+
+.item-container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.item-wrapper {
+    overflow: hidden;
+    width: 200px;
+    padding: 5px;
+    background-color: #999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-circle {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    border-radius: 100%;
+    background-color: #f00;
+}
+
+.item-square {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    background-color: #0f0;
+}
+
+.item-line {
+    height: 10px;
+    width: 100px;
+    margin: 50px 5px;
+    background-color: #00f;
+}
+
+.item-triangle {
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+
+    border-bottom: 100px solid #0ff;
+}
+
+.item-bullet {
+    height: 100px;
+    width: 100px;
+    border: 5px solid #000;
+    border-radius: 0 100% 100% 0;
+    background-color: #666;
+}
+
+.item-pacman {
+    border: 50px solid #ff0;
+    border-right: 50px solid transparent;
+    border-radius: 100%;
+    animation: pacman 0.5s infinite linear;
+}
+
+@keyframes pacman {
+    33%, 66% {
+        background-color: #ff0;
+    }
+
+}
+
+.item-egg {
+    margin: 10px;
+    border: 50px solid #fff;
+    border-left: 40px solid #fff;
+    border-right: 40px solid #fff;
+    border-radius: 30% 33% 75% 33%;
+    transform: rotate(45deg) rotate3d(0.5, 0.5, 0.5, 15deg);
+}
+
+.item-coin {
+    height: 75px;
+    width: 75px;
+    border: 5px solid goldenrod;
+    border-radius: 100%;
+    background-color: gold;
+}
+
+.item-shield {
+    height: 100px;
+    width: 100px;
+    border: 5px solid #666;
+    border-radius: 100%;
+    /* background-color: #666; */
+    background-image: radial-gradient(#f00 0%, #00f 20%, #f00 40%, #00f 60%, #f00 80%, #00f 100%);
+}
