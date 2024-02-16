@@ -72,42 +72,65 @@ body {
     background-color: #666;
 }
 
-.item-pacman {
-    border: 50px solid #ff0;
-    border-right: 50px solid transparent;
-    border-radius: 100%;
-    animation: pacman 0.5s infinite linear;
-}
-
-@keyframes pacman {
-    33%, 66% {
-        background-color: #ff0;
-    }
-
-}
-
 .item-egg {
     margin: 10px;
     border: 50px solid #fff;
     border-left: 40px solid #fff;
     border-right: 40px solid #fff;
     border-radius: 30% 33% 75% 33%;
-    transform: rotate(45deg) rotate3d(0.5, 0.5, 0.5, 15deg);
+    transform: rotate(45deg) rotate3d(100, 0, 100, 15deg);
 }
 
-.item-coin {
+.item-pacman {
+    border: 50px solid #ff0;
+    border-right: 50px solid transparent;
+    border-radius: 100%;
+    animation: pacman 0.33s infinite linear;
+}
+
+@keyframes pacman {
+
+    32% {
+        border-right-color: transparent;
+    }
+
+    33%, 66% {
+        border-right-color: #ff0;
+    }
+
+    67% {
+        border-right-color: transparent;
+    }
+
+}
+
+.item-sun {
     height: 75px;
     width: 75px;
-    border: 5px solid goldenrod;
     border-radius: 100%;
-    background-color: gold;
+    background-color: #fb0;
+    box-shadow: 0 0 16px 16px #ff0;
 }
 
-.item-shield {
+.item-target {
     height: 100px;
     width: 100px;
     border: 5px solid #666;
     border-radius: 100%;
     /* background-color: #666; */
-    background-image: radial-gradient(#f00 0%, #00f 20%, #f00 40%, #00f 60%, #f00 80%, #00f 100%);
+    background-image: radial-gradient(#f00 0%,
+            #fff 5%,
+            #f00 10%,
+            #fff 15%,
+            #0f0 20%,
+            #fff 25%,
+            #0f0 30%,
+            #fff 35%,
+            #00f 40%,
+            #fff 45%,
+            #00f 50%,
+            #fff 55%,
+            #00f 60%,
+            #fff 65%,
+            #00f 70%);
 }
