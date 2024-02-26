@@ -72,13 +72,30 @@ body {
     background-color: #666;
 }
 
-.item-egg {
-    margin: 10px;
+
+.item-radioactive {
     border: 50px solid #fff;
     border-left: 40px solid #fff;
     border-right: 40px solid #fff;
     border-radius: 30% 33% 75% 33%;
     transform: rotate(45deg) rotate3d(100, 0, 100, 15deg);
+    box-shadow: 0 0 16px 4px #0f0;
+    animation: radioactive 3s infinite linear;
+}
+
+@keyframes radioactive {
+    0% {
+        box-shadow: 0 0 4px 4px #0f0;
+    }
+
+    50% {
+        box-shadow: 0 0 16px 16px #0f0;
+    }
+
+    100% {
+        box-shadow: 0 0 4px 4px #0f0;
+    }
+
 }
 
 .item-pacman {
@@ -110,6 +127,22 @@ body {
     border-radius: 100%;
     background-color: #fb0;
     box-shadow: 0 0 16px 16px #ff0;
+    animation: sun 3s infinite linear;
+}
+
+@keyframes sun {
+    0% {
+        box-shadow: 0 0 16px 10px #ff0;
+    }
+
+    50% {
+        box-shadow: 0 0 16px 16px #ff0;
+    }
+
+    100% {
+        box-shadow: 0 0 16px 10px #ff0;
+    }
+
 }
 
 .item-target {

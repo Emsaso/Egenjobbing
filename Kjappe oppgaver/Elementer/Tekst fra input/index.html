@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tekst input</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script defer src='main.js'></script>
+</head>
+
+<body>
+    <div class="title-container">
+        <h1 id="title">Tittel</h1>
+    </div>
+    <div class="paragraph-container">
+        <p id="text-block">Paragraf</p>
+    </div>
+    <div class="input-container">
+        <input placeholder="Tittel" id="title-input" type="text" oninput="updateTitle(this.value)">
+        <textarea placeholder="Tekst" id="text-block-input" cols="30" rows="10"
+            oninput="updateTextBlock(this.value)"></textarea>
+    </div>
+</body>
+
+</html>

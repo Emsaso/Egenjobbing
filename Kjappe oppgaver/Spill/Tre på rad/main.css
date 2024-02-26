@@ -1,0 +1,53 @@
+body {
+    background-color: #666;
+    color: #fff;
+}
+
+#header-container {
+    margin: 60px auto auto;
+    width: 309px;
+    border-radius: 100px;
+    background-image: linear-gradient(to right, yellow, orange, red, violet, indigo, blue, green);
+}
+
+h1 {
+    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    font-size: 4em;
+    text-align: center;
+    color: transparent;
+}
+
+#game-container {
+    margin: 60px auto;
+    width: fit-content;
+    border: 3px solid black;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.square {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 5em;
+}
+
+#button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 309px;
+    margin: auto;
+    /* text-align: center; */
+}
+
+button {
+    font-size: 1em;
+    padding: 15px;
+    width: 40%;
+}

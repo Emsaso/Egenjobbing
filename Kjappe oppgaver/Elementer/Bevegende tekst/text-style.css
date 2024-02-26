@@ -1,0 +1,64 @@
+body {
+    overflow: hidden;
+}
+
+#text-container {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.text {
+    position: relative;
+    white-space: nowrap;
+
+}
+
+.text:nth-child(1) {
+    animation: leftBouncing 5s infinite linear;
+
+}
+
+.text:nth-child(2) {
+    animation: leftBouncing 10s infinite linear;
+
+}
+
+.text:nth-child(3) {
+    font-size: 1.5em;
+    animation: leftBouncing 15s infinite linear;
+
+}
+
+@keyframes leftBouncing {
+    0% {
+        transform: translateX(0%);
+    }
+
+    50% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes leftToRight {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes rightToLeft {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: 0%;
+    }
+}

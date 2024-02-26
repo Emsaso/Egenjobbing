@@ -1,0 +1,30 @@
+.title-container {
+    width: 60%;
+    margin: auto;
+
+}
+
+.paragraph-container {
+    height: auto;
+    width: 60%;
+    margin: auto;
+    /* text-align: center; */
+}
+
+#text-block {
+    max-width: 100%;
+    border: 1px solid black;
+    /* text-wrap: break-word; */
+    overflow-wrap: break-word;
+}
+
+.input-container {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    max-width: 99.4%;
+}
